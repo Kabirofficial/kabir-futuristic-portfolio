@@ -5,10 +5,6 @@
 
 This repository contains the source code for my personal portfolio website, designed with a futuristic aesthetic and interactive elements to highlight my skills and projects as a web developer.
 
-## Demo
-
-[**[Live Demo]**](YourWebsiteURLHere) (Replace with your actual URL)
-
 **Key Features:**
 
 *   **Futuristic Design:** Cyberpunk-inspired visuals, including neon colors, glassmorphism, and animated backgrounds.
