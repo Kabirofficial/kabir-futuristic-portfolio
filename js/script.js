@@ -1,3 +1,4 @@
+// script.js - UPDATED
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('nav ul li a');
     const exploreBtn = document.querySelector('#home .neon-gradient-btn');
@@ -294,23 +295,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Floating Particles - reduced number and simplified
-    function createParticles() {
-        const particleContainer = document.createElement('div');
-        particleContainer.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0';
-        document.body.appendChild(particleContainer);
-
-        for (let i = 0; i < 20; i++) { // Reduced to 20 particles
-            const particle = document.createElement('div');
-            particle.style.cssText = `position:absolute;width:2px;height:2px;background:rgba(0,255,255,0.5);border-radius:50%;left:${Math.random() * 100}%;top:${Math.random() * 100}%;animation:float ${Math.random() * 5 + 5}s infinite linear`; // Changed to linear
-            particleContainer.appendChild(particle);
-        }
-    }
-
-    
-
-    createParticles();
-
     // Carousel Functionality - same as before, left unchanged
     const carouselTrack = document.querySelector('[data-carousel-track]');
     const carouselButtons = document.querySelectorAll('[data-carousel-button]');
@@ -328,24 +312,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-       // Contact Form Submission - unchanged
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('name').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const message = document.getElementById('message').value.trim();
-            if (!name || !email || !message) return alert('All fields are required.');
-            if (!/\S+@\S+\.\S+/.test(email)) return alert('Please enter a valid email.');
-
-            // Submit the form (this part depends on your form submission method)
-            contactForm.submit(); // Or use AJAX for a smoother experience
-
-            // Optionally display a success message
-            alert('Transmission sent successfully!');
-        });
-    }
  const videos = document.querySelectorAll('.project-video');
 
     videos.forEach(video => {
