@@ -564,6 +564,28 @@ aside {
     animation: blink 0.75s step-end infinite, typing 4s steps(40, end) forwards;
 }
 
+#home .profile-container .profile-overlay {
+    position: relative; /* Allow normal flow */
+    bottom: auto; /* Reset positioning */
+    left: auto;
+    right: auto;
+    margin-top: var(--space-xs); /* Add a little space above the overlay */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: var(--space-xs);
+    border-radius: 5px;  /* Adjust to your preference */
+    width: 100%; /* Ensures full width */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+#home .profile-container .typing-text {
+    font-size: 1.1rem; /* Adjust font size as needed */
+    white-space: normal; /* Allow text to wrap */
+    word-break: break-word; /* Break long words if needed */
+    border-right: none; /* Remove the cursor */
+    animation: none;  /* Disable typing animation */
+}
+
 @keyframes typing {
     from {
         width: 0
@@ -1256,9 +1278,7 @@ p {
         padding: var(--space-sm); /* Smaller button padding */
         font-size: 1rem; /* Smaller button font size */
     }
-}
-
-/* Smaller screens */
+}/* Smaller screens */
 @media (max-width: 576px) {
     .carousel-slide h3 {
         font-size: 1.3rem; /* Smaller heading */
