@@ -1,7 +1,7 @@
 # Kabir's Futuristic Portfolio
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Website](https://img.shields.io/badge/Website-Online-brightgreen)](YourWebsiteURLHere)  (Replace with your actual URL)
+[![Website](https://img.shields.io/badge/Website-Online-brightgreen)](https://kabirofficial.github.io/kabir-futuristic-portfolio/))
 
 This repository contains the source code for my personal portfolio website, designed with a futuristic aesthetic and interactive elements to highlight my skills and projects as a web developer.
 
