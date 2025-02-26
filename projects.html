@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabir Portfolio - Projects</title>
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Showcase of Kabir's futuristic web development projects, including UI clones and experimental works.">
+    <meta name="keywords"
+        content="projects, portfolio, web development, html, css, javascript, netflix clone, prime video clone, riot games clone, spotify clone, futuristic">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="page-transition"></div>
+    <div class="futuristic-overlay"></div>
+
+    <header class="top-bar">
+        <a href="/index.html">
+            <div class="tagline">Crafting the Digital Cosmos</div>
+        </a>
+        <nav class="top-nav">
+            <a href="https://www.linkedin.com/in/thayanikabir/" target="_blank" class="neon-link"
+                data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Kabirofficial" target="_blank" class="neon-link" data-tooltip="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://instagram.com/thayanikabir_01" target="_blank" class="neon-link"
+                data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <button class="cyber-hamburger" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <aside class="aside-hidden">
+            <button class="neon-cross" aria-label="Close Navigation"></button>
+            <div id="nav-3d-sphere"></div>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    <li><a href="projects.html" class="active"><i class="fas fa-folder"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <section id="projects" class="scroll-section">
+                <div class="section-header">Projects</div>
+                <div class="content-box">
+                    <div class="section-content">
+                        <h2>Cyber Constructs</h2>
+                        <p>A gallery of my deployments, showcasing expertise in frontend engineering and UI
+                            replication.</p>
+
+                        <!-- Carousel Structure -->
+                        <div class="project-carousel-container">
+                            <button class="carousel-button prev" data-carousel-button="prev"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <div class="carousel" data-carousel>
+                                <ul class="carousel-track" data-carousel-track>
+                                    <li class="carousel-slide">
+                                        <h3>Netflix Clone</h3>
+                                        <video class="project-video" controls loop>
+                                            <source src="./videos/netflix clone.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <p>A frontend simulation of Netflix’s core interface using HTML, CSS, and
+                                            JavaScript,
+                                            with
+                                            dynamic content loading.</p>
+                                        <a href="https://github.com/Kabirofficial/netflix-clone"
+                                            class="neon-gradient-btn">Access
+                                            Node</a>
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <h3>Prime Video Clone</h3>
+                                        <video class="project-video" controls loop>
+                                            <source src="./videos/prime clone.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <p>A frontend replica of Prime Video using HTML and CSS, optimized for streaming
+                                            aesthetics.</p>
+                                        <a href="https://github.com/Kabirofficial/Prime-Video-Frontend-Clone-"
+                                            class="neon-gradient-btn">Access
+                                            Node</a>
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <h3>Riot Games Clone</h3>
+                                        <video class="project-video" controls loop>
+                                            <source src="./videos/riot clone.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <p>A pixel-perfect clone of the Riot Games portal using HTML & CSS, capturing
+                                            gaming
+                                            vibes.</p>
+                                        <a href="https://github.com/Kabirofficial/riot-clone"
+                                            class="neon-gradient-btn">Access
+                                            Node</a>
+                                    </li>
+                                    <li class="carousel-slide">
+                                        <h3>Spotify Clone</h3>
+                                        <video class="project-video" controls loop>
+                                            <source src="./videos/spotify clone.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <p>A homepage simulation of Spotify using HTML and CSS, with a focus on
+                                            audio-visual
+                                            design.</p>
+                                        <a href="https://github.com/Kabirofficial/spotify-clone"
+                                            class="neon-gradient-btn">Access
+                                            Node</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="carousel-button next" data-carousel-button="next"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+
+                        <!-- Labs Section
+                        <div class="labs-container">
+                            <h2>Labs: Experimental Grid</h2>
+                            <p>Prototypes pushing the boundaries of web technology into uncharted territories.</p>
+                            <div class="project-grid">
+                                <div class="project-card">
+                                    <h3>3D Portfolio Viewer</h3>
+                                    <div class="project-3d-container" data-project="3d-viewer"></div>
+                                    <p>An in-progress 3D navigation system for portfolio browsing using Three.js.</p>
+                                    <a href="#" class="neon-gradient-btn disabled">In Development</a>
+                                </div>
+                                <div class="project-card">
+                                    <h3>AI Chat Interface</h3>
+                                    <div class="project-3d-container" data-project="ai-chat"></div>
+                                    <p>A conceptual AI-driven chat UI with real-time response rendering.</p>
+                                    <a href="#" class="neon-gradient-btn disabled">In Development</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2025 Kabir. Wired for the Future. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r165/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

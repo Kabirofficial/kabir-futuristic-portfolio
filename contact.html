@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabir Portfolio - Contact</title>
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Connect with Kabir for collaborations, projects, or opportunities in the digital realm.">
+    <meta name="keywords" content="contact, web developer, email, linkedin, github, instagram, futuristic">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="page-transition"></div>
+    <div class="futuristic-overlay"></div>
+
+    <header class="top-bar">
+        <a href="/index.html">
+            <div class="tagline">Crafting the Digital Cosmos</div>
+        </a>
+        <nav class="top-nav">
+            <a href="https://www.linkedin.com/in/thayanikabir/" target="_blank" class="neon-link"
+                data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Kabirofficial" target="_blank" class="neon-link" data-tooltip="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://instagram.com/thayanikabir_01" target="_blank" class="neon-link"
+                data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <button class="cyber-hamburger" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <aside class="aside-hidden">
+            <button class="neon-cross" aria-label="Close Navigation"></button>
+            <div id="nav-3d-sphere"></div>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    <li><a href="projects.html"><i class="fas fa-folder"></i> Projects</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <section id="contact" class="scroll-section">
+                <div class="section-header">Contact</div>
+                <div class="content-box">
+                    <div class="section-content">
+                        <h2>Link to the Grid</h2>
+                        <p>Transmit your signal for collaborations or opportunities. I’m wired for connection in the
+                            digital
+                            cosmos.</p>
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/manqgvkz"
+                            method="POST">
+                            <label for="name">Your Alias</label>
+                            <input type="text" id="name" name="name" placeholder="Your Alias" required>
+                            <label for="email">Your Signal</label>
+                            <input type="email" id="email" name="email" placeholder="Your Signal" required>
+                            <label for="message">Your Transmission</label>
+                            <textarea id="message" name="message" placeholder="Your Transmission" required></textarea>
+                            <button type="submit" class="neon-gradient-btn">Send Pulse</button>
+                        </form>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/thayanikabir/" target="_blank"
+                                data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/Kabirofficial" target="_blank" data-tooltip="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/thayanikabir_01" target="_blank" data-tooltip="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="mailto:thayanikabir.business@gmail.com" data-tooltip="Email"><i
+                                    class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2025 Kabir. Wired for the Future. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r165/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

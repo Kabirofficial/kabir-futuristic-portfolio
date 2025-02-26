@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabir Portfolio - Home</title>
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        as="style">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <meta name="description"
+        content="Kabir's Portfolio - Frontend & Web Developer showcasing futuristic web development skills and innovative projects.">
+    <meta name="keywords"
+        content="frontend developer, web developer, javascript, react, portfolio, three.js, futuristic">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="page-transition"></div>
+    <div class="futuristic-overlay"></div>
+
+    <header class="top-bar">
+        <a href="/index.html">
+            <div class="tagline">Crafting the Digital Cosmos</div>
+        </a>
+        <nav class="top-nav">
+            <a href="https://www.linkedin.com/in/thayanikabir/" target="_blank" class="neon-link"
+                data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Kabirofficial" target="_blank" class="neon-link" data-tooltip="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://instagram.com/thayanikabir_01" target="_blank" class="neon-link"
+                data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <button class="cyber-hamburger" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <aside class="aside-hidden">
+            <button class="neon-cross" aria-label="Close Navigation"></button>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="achievements.html"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    <li><a href="projects.html"><i class="fas fa-folder"></i> Projects</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <section id="home" class="scroll-section">
+                <div class="section-header">Home</div>
+                <div class="content-box">
+                    <div class="section-content home-container">
+                        <div class="profile-container">
+                            <img src="./images/profile.jpg" alt="Kabir - Frontend & Web Developer" class="profile-img"
+                                loading="lazy">
+                            <div class="profile-overlay">
+                                <span class="typing-text" data-text="Frontend & Web Developer"></span>
+                            </div>
+                        </div>
+                        <div class="intro-container">
+                            <h1>Kabir - Digital Architect</h1>
+                            <h2>Building Tomorrow’s Web</h2>
+                            <p>Welcome to my digital realm! I’m a frontend and web developer obsessed with crafting
+                                immersive,
+                                high-performance experiences. With expertise in modern JavaScript frameworks like React
+                                and
+                                Vue.js, I design scalable, interactive interfaces that transcend the ordinary.</p>
+                            <div class="buzzwords"><strong>Core Systems:</strong> JavaScript, React, Node.js,
+                                TypeScript,
+                                Next.js, UI/UX, Web Performance</div>
+                            <div class="tech-stack-preview">
+                                <h3>My Arsenal</h3>
+                                <div class="tech-icons">
+                                    <a href="#" title="React" aria-label="React" data-tooltip="React"><i
+                                            class="fab fa-react"></i></a>
+                                    <a href="#" title="JavaScript" aria-label="JavaScript" data-tooltip="JavaScript"><i
+                                            class="fab fa-js"></i></a>
+                                    <a href="#" title="Node.js" aria-label="Node.js" data-tooltip="Node.js"><i
+                                            class="fab fa-node-js"></i></a>
+                                    <a href="#" title="HTML5" aria-label="HTML5" data-tooltip="HTML5"><i
+                                            class="fab fa-html5"></i></a>
+                                    <a href="#" title="CSS3" aria-label="CSS3" data-tooltip="CSS3"><i
+                                            class="fab fa-css3-alt"></i></a>
+                                </div>
+                            </div>
+                            <a href="/projects.html" class="neon-gradient-btn">Explore Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2025 Kabir. Wired for the Future. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r165/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.3/purify.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
