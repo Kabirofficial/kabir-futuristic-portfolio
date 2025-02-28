@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.classList.remove('sidebar-open');
     });
 
-    // Close Sidebar on Link Click (Optional for Mobile)
+    // Close Sidebar on Link Click
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 400);
     }
 
-   // Intersection Observer for Scroll Effects - Debounced
+   // Intersection Observer for Scroll Effects
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             } else {
-                entry.target.classList.remove('visible'); // Remove class when not in view
+                entry.target.classList.remove('visible');
             }
         });
     }, { root: null, threshold: 0.6, rootMargin: '-50px' });
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!startTime) startTime = timestamp;
             const progress = timestamp - startTime;
 
-            if (i < text.length && progress > 80) { // Adjust speed here
+            if (i < text.length && progress > 80) {
                 typingText.textContent = text.slice(0, i + 1);
                 i++;
                 startTime = timestamp;
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     i = 0;
                     startTime = null;
-                    typingText.textContent = ''; // Clear the text before restarting
+                    typingText.textContent = '';
                     requestAnimationFrame(type);
                 }, 1800);
             }
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Debounce Helper (already defined, keep it)
+    // Debounce Helper
     function debounce(func, wait) {
         let timeout;
         return function(...args) {
@@ -116,13 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    // Conditionally initialize 3D Sphere - Reduced complexity, checks for container
+    // Conditionally initialize 3D Sphere
     const navSphereContainer = document.getElementById('nav-3d-sphere');
     if (navSphereContainer && typeof THREE !== 'undefined') {
         initializeNavSphere(navSphereContainer);
     }
 
-    // Conditionally initialize Home Page 3D Background - Checks for container
+    // Conditionally initialize Home Page 3D Background
     const bgContainer = document.getElementById('bg-3d-container');
     if (bgContainer && typeof THREE !== 'undefined') {
         initializeHomePage3D(bgContainer);
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Contact Page 3D Background - Checks for container
+    // Contact Page 3D Background
     const contact3DContainer = document.getElementById('contact-3d-container');
     if (contact3DContainer && typeof THREE !== 'undefined') {
         initializeContact3D(contact3DContainer);
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setSize(100, 100);
         container.appendChild(renderer.domElement);
 
-        const geometry = new THREE.SphereGeometry(0.5, 16, 16); // Reduced segments
+        const geometry = new THREE.SphereGeometry(0.5, 16, 16);
         const material = new THREE.MeshBasicMaterial({ color: 0x00ffff, wireframe: true });
         const sphere = new THREE.Mesh(geometry, material);
         scene.add(sphere);
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setSize(container.offsetWidth, container.offsetHeight);
         container.appendChild(renderer.domElement);
 
-        const geometry = new THREE.TorusKnotGeometry(1, 0.3, 50, 8); // Reduced segments
+        const geometry = new THREE.TorusKnotGeometry(1, 0.3, 50, 8);
         const material = new THREE.MeshStandardMaterial({ color: 0x00ffff, metalness: 0.7, roughness: 0.1, wireframe: true });
         const torusKnot = new THREE.Mesh(geometry, material);
         scene.add(torusKnot);
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setSize(container.offsetWidth, 180);
         container.appendChild(renderer.domElement);
 
-        const geometry = new THREE.DodecahedronGeometry(1, 0); // Reduced detail
+        const geometry = new THREE.DodecahedronGeometry(1, 0);
         const material = new THREE.MeshPhongMaterial({ color: 0x00ffff, wireframe: true });
         const dodecahedron = new THREE.Mesh(geometry, material);
         scene.add(dodecahedron);
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.setSize(container.offsetWidth, container.offsetHeight);
         container.appendChild(renderer.domElement);
 
-        const particleCount = 75; // Further reduced particle count
+        const particleCount = 75;
         const particles = new THREE.BufferGeometry();
         const positions = new Float32Array(particleCount * 3);
         for (let i = 0; i < particleCount * 3; i += 3) {
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Carousel Functionality - same as before, left unchanged
+    // Carousel Functionality
     const carouselTrack = document.querySelector('[data-carousel-track]');
     const carouselButtons = document.querySelectorAll('[data-carousel-button]');
 
@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselButtons.forEach(button => {
             button.addEventListener('click', () => {
                 const offset = button.dataset.carouselButton === 'next' ? 1 : -1;
-                slideIndex = (slideIndex + offset + slides.length) % slides.length; // Ensure looping
+                slideIndex = (slideIndex + offset + slides.length) % slides.length;
                 carouselTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
             });
         });
@@ -315,15 +315,15 @@ document.addEventListener('DOMContentLoaded', () => {
  const videos = document.querySelectorAll('.project-video');
 
     videos.forEach(video => {
-        video.muted = true; // Start muted
+        video.muted = true;
 
         //Autoplay
         video.autoplay = true;
 
         //Event listener to check if video is stuck
         video.addEventListener('timeupdate', function() {
-            if(this.currentTime > 3) { //Check at 3 seconds
-                this.removeEventListener('timeupdate', arguments.callee); //Remove this event listener.
+            if(this.currentTime > 3) {
+                this.removeEventListener('timeupdate', arguments.callee);
                 console.log("Video Stuck at 3 seconds!");
             }
         });
