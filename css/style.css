@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-/* Root Variables (Refined) */
+/* Root Variables */
 :root {
     --primary-color: #050811;
     --secondary-color: #00ffff;
@@ -99,7 +99,7 @@ body {
     }
 }
 
-/* Top Bar (Refined) */
+/* Top Bar */
 .top-bar {
     position: fixed;
     top: 0;
@@ -263,7 +263,7 @@ body {
     box-shadow: 0 0 12px var(--highlight-color);
 }
 
-/* Sidebar (Refined) */
+/* Sidebar */
 aside {
     width: 250px;
     background: linear-gradient(180deg, var(--primary-color), var(--background-color));
@@ -380,7 +380,7 @@ aside {
     }
 }
 
-/* Futuristic Section Header (Holographic - Refined) */
+/* Futuristic Section Header */
 .section-header {
     margin-top: 31px;
     margin-bottom: -27px;
@@ -434,7 +434,7 @@ aside {
     }
 }
 
-/* Glassmorphism Content Box (Refined) */
+/* Glassmorphism Content Box */
 .content-box {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-color);
@@ -565,25 +565,25 @@ aside {
 }
 
 #home .profile-container .profile-overlay {
-    position: relative; /* Allow normal flow */
-    bottom: auto; /* Reset positioning */
+    position: relative;
+    bottom: auto;
     left: auto;
     right: auto;
-    margin-top: var(--space-xs); /* Add a little space above the overlay */
+    margin-top: var(--space-xs);
     text-align: center;
     background: rgba(0, 0, 0, 0.6);
     padding: var(--space-xs);
-    border-radius: 5px;  /* Adjust to your preference */
-    width: 100%; /* Ensures full width */
-    box-sizing: border-box; /* Include padding in width */
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #home .profile-container .typing-text {
-    font-size: 1.1rem; /* Adjust font size as needed */
-    white-space: normal; /* Allow text to wrap */
-    word-break: break-word; /* Break long words if needed */
-    border-right: none; /* Remove the cursor */
-    animation: none;  /* Disable typing animation */
+    font-size: 1.1rem;
+    white-space: normal;
+    word-break: break-word;
+    border-right: none;
+    animation: none;
 }
 
 @keyframes typing {
@@ -650,7 +650,6 @@ aside {
     justify-content: flex-start;
     gap: var(--space-sm);
     flex-wrap: wrap;
-    /* Allows icons to wrap on smaller screens */
 }
 
 .tech-stack-preview .tech-icons a {
@@ -684,7 +683,7 @@ aside {
     z-index: 20;
 }
 
-/* Buttons (Refined) */
+/* Buttons */
 .neon-gradient-btn {
     background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
     color: var(--primary-color);
@@ -754,7 +753,7 @@ aside {
     background: linear-gradient(45deg, #666, #444);
 }
 
-/* Headings and Text (Improved Fonts) */
+/* Headings and Text */
 h1,
 h2,
 h3 {
@@ -843,7 +842,6 @@ p {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Responsive grid */
     gap: var(--space-xl);
 }
 
@@ -980,7 +978,7 @@ p {
     transform: translateY(-3px);
 }
 
-/* Media Queries (Mobile First) */
+/* Media Queries */
 @media (max-width: 768px) {
 
     /* General Padding and Margins */
@@ -1033,11 +1031,9 @@ p {
 
     /* Sidebar */
     aside {
-        /* NEW STYLES FOR MOBILE */
-        width: 70%; /* Reduce the width to 70% of the screen */
-        max-width: 300px; /* Set a maximum width to prevent it from being too wide */
-        height: 100%; /* Make it full height */
-        /* END NEW STYLES */
+        width: 70%;
+        max-width: 300px;
+        height: 100%;
         left: -100%;
         top: 0;
         padding: var(--space-md);
@@ -1156,7 +1152,7 @@ p {
 
     /* Form */
     .contact-form {
-        max-width: 100%; /* Full width on mobile */
+        max-width: 100%;
     }
 }
 
@@ -1271,20 +1267,20 @@ p {
 /* Responsive Carousel */
 @media (max-width: 768px) {
     .carousel-slide {
-        padding: var(--space-md); /* Smaller padding on mobile */
+        padding: var(--space-md);
     }
 
     .carousel-button {
-        padding: var(--space-sm); /* Smaller button padding */
-        font-size: 1rem; /* Smaller button font size */
+        padding: var(--space-sm);
+        font-size: 1rem;
     }
 }/* Smaller screens */
 @media (max-width: 576px) {
     .carousel-slide h3 {
-        font-size: 1.3rem; /* Smaller heading */
+        font-size: 1.3rem;
     }
 
     .carousel-slide p {
-        font-size: var(--font-size-sm); /* Smaller paragraph text */
+        font-size: var(--font-size-sm);
     }
 }
